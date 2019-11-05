@@ -1,14 +1,15 @@
 package ec.edu.utpl.sic.arqapl;
 
 
+import ec.edu.utpl.sic.arqapl.metrics.Cosine;
 import ec.edu.utpl.sic.arqapl.metrics.Jaccard;
+import ec.edu.utpl.sic.arqapl.metrics.JaroWinkel;
 import ec.edu.utpl.sic.arqapl.metrics.Similaritable;
 
 public class TweetSimilarity {
     private Similaritable algorithm;
 
     public TweetSimilarity() {
-        algorithm = new Jaccard();
     }
 
     public TweetSimilarity(Similaritable algorithm) {
